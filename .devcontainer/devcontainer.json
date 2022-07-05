@@ -1,0 +1,24 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.205.2/containers/java
+{
+	"name": "Java",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/game_engine",
+	
+
+	"settings": {
+		"java.jdt.ls.java.home": "/docker-java-home"
+	},
+	"extensions": [
+		"vscjava.vscode-java-pack",
+		"ms-vsliveshare.vsliveshare-pack",
+		"k--kato.intellij-idea-keybindings",
+		"GabrielBB.vscode-lombok",
+		"eamodio.gitlens"
+	],
+	"remoteUser": "vscode",
+	"features": {
+		"git": "os-provided"
+	}
+}

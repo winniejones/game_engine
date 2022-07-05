@@ -1,0 +1,30 @@
+{
+    "sourceFile": ".devcontainer/Dockerfile",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1656806676001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1656806716966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,4 +2,8 @@\n \n # [Choice] Java version (use -bullseye variants on local arm64/Apple Silicon): 11, 17, 11-bullseye, 17-bullseye, 11-buster, 17-buster\n ARG VARIANT=\"11-bullseye\"\n FROM mcr.microsoft.com/vscode/devcontainers/java:0-${VARIANT}\n+\n+# [Option] Install Maven\n+ARG INSTALL_MAVEN=\"true\"\n+ARG MAVEN_VERSION=\"3.8.6\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1656806761324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,7 @@\n FROM mcr.microsoft.com/vscode/devcontainers/java:0-${VARIANT}\n \n # [Option] Install Maven\n ARG INSTALL_MAVEN=\"true\"\n-ARG MAVEN_VERSION=\"3.8.6\"\n\\ No newline at end of file\n+ARG MAVEN_VERSION=\"3.8.6\"\n+\n+RUN if [ \"${INSTALL_MAVEN}\" = \"true\" ]; then su vscode -c \"umask 0002 && . /usr/local/sdkman/bin/sdkman-init.sh && sdk install maven \\\"${MAVEN_VERSION}\\\"\"; fi \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1656879915836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,14 @@\n # See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.205.2/containers/java/.devcontainer/base.Dockerfile\n \n # [Choice] Java version (use -bullseye variants on local arm64/Apple Silicon): 11, 17, 11-bullseye, 17-bullseye, 11-buster, 17-buster\n-ARG VARIANT=\"11-bullseye\"\n+ARG VARIANT=\"17-bullseye\"\n FROM mcr.microsoft.com/vscode/devcontainers/java:0-${VARIANT}\n \n # [Option] Install Maven\n ARG INSTALL_MAVEN=\"true\"\n ARG MAVEN_VERSION=\"3.8.6\"\n \n\\ No newline at end of file\n-RUN if [ \"${INSTALL_MAVEN}\" = \"true\" ]; then su vscode -c \"umask 0002 && . /usr/local/sdkman/bin/sdkman-init.sh && sdk install maven \\\"${MAVEN_VERSION}\\\"\"; fi \n+RUN if [ \"${INSTALL_MAVEN}\" = \"true\" ]; then su vscode -c \"umask 0002 && . /usr/local/sdkman/bin/sdkman-init.sh && sdk install maven \\\"${MAVEN_VERSION}\\\"\"; fi \n+\n+# install clang for scala native\n+#RUN apt-get update && apt-get -y install libXext.x86_64 libXrender.x86_64 libXtst.x86_64\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1656806676001,
+            "name": "Commit-0",
+            "content": "# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.205.2/containers/java/.devcontainer/base.Dockerfile\n\n# [Choice] Java version (use -bullseye variants on local arm64/Apple Silicon): 11, 17, 11-bullseye, 17-bullseye, 11-buster, 17-buster\nARG VARIANT=\"11-bullseye\"\nFROM mcr.microsoft.com/vscode/devcontainers/java:0-${VARIANT}\n"
+        }
+    ]
+}

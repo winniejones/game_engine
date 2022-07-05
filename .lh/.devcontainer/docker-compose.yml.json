@@ -1,0 +1,34 @@
+{
+    "sourceFile": ".devcontainer/docker-compose.yml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1656806597028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1656806610561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n             context: .\n             dockerfile: Dockerfile\n             args:\n                 # Update the VARIANT arg to pick a Java version: 11, 17\n-                VARIANT: \"17\"\n+                VARIANT: \"11\"\n                 # Options\n                 INSTALL_MAVEN: \"false\"\n                 INSTALL_GRADLE: \"false\"\n                 NODE_VERSION: \"lts/*\"\n"
+                },
+                {
+                    "date": 1656806616691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n             args:\n                 # Update the VARIANT arg to pick a Java version: 11, 17\n                 VARIANT: \"11\"\n                 # Options\n-                INSTALL_MAVEN: \"false\"\n+                INSTALL_MAVEN: \"true\"\n                 INSTALL_GRADLE: \"false\"\n                 NODE_VERSION: \"lts/*\"\n         volumes:\n             - ..:/workspaces/game_engine:cached\n"
+                },
+                {
+                    "date": 1656895772326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,16 @@\n             context: .\n             dockerfile: Dockerfile\n             args:\n                 # Update the VARIANT arg to pick a Java version: 11, 17\n-                VARIANT: \"11\"\n+                VARIANT: \"17\"\n                 # Options\n                 INSTALL_MAVEN: \"true\"\n                 INSTALL_GRADLE: \"false\"\n                 NODE_VERSION: \"lts/*\"\n+        environment:\n+            - DISPLAY=172.18.112.1:0.0\n         volumes:\n+           # - /tmp/.X11-unix:/tmp/.X11-unix\n             - ..:/workspaces/game_engine:cached\n \n         command: sleep infinity\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1656900080344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n                 # Options\n                 INSTALL_MAVEN: \"true\"\n                 INSTALL_GRADLE: \"false\"\n                 NODE_VERSION: \"lts/*\"\n-        environment:\n-            - DISPLAY=172.18.112.1:0.0\n+        #environment:\n+            #- DISPLAY=172.18.112.1:0.0\n         volumes:\n-           # - /tmp/.X11-unix:/tmp/.X11-unix\n+            #- /tmp/.X11-unix:/tmp/.X11-unix\n             - ..:/workspaces/game_engine:cached\n \n         command: sleep infinity\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1656806597028,
+            "name": "Commit-0",
+            "content": "version: '3'\n\nservices:\n    app: \n        build:\n            context: .\n            dockerfile: Dockerfile\n            args:\n                # Update the VARIANT arg to pick a Java version: 11, 17\n                VARIANT: \"17\"\n                # Options\n                INSTALL_MAVEN: \"false\"\n                INSTALL_GRADLE: \"false\"\n                NODE_VERSION: \"lts/*\"\n        volumes:\n            - ..:/workspaces/game_engine:cached\n\n        command: sleep infinity"
+        }
+    ]
+}

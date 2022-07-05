@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    app: 
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                # Update the VARIANT arg to pick a Java version: 11, 17
+                VARIANT: "17"
+                # Options
+                INSTALL_MAVEN: "true"
+                INSTALL_GRADLE: "false"
+                NODE_VERSION: "lts/*"
+        environment:
+            - DISPLAY=192.168.0.101:0.0
+        volumes:
+            #- /tmp/.X11-unix:/tmp/.X11-unix
+            - ..:/workspaces/game_engine:cached
+
+        command: sleep infinity

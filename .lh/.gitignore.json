@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".gitignore",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656805853551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656805853551,
+            "name": "Commit-0",
+            "content": "## Java\n\n*.class\n*.war\n*.ear\nhs_err_pid*\n*.bin\n\n## Robovm\n/ios/robovm-build/\n\n## GWT\n/html/war/\n/html/gwt-unitCache/\n.apt_generated/\n.gwt/\ngwt-unitCache/\nwww-test/\n.gwt-tmp/\n\n## Android Studio and Intellij and Android in general\n/android/libs/armeabi/\n/android/libs/armeabi-v7a/\n/android/libs/arm64-v8a/\n/android/libs/x86/\n/android/libs/x86_64/\n/android/gen/\n.idea/\n*.ipr\n*.iws\n*.iml\n/android/out/\ncom_crashlytics_export_strings.xml\n\n## Eclipse\n\n.classpath\n.project\n.metadata/\n/android/bin/\n/core/bin/\n/desktop/bin/\n/html/bin/\n/ios/bin/\n/ios-moe/bin/\n*.tmp\n*.bak\n*.swp\n*~.nib\n.settings/\n.loadpath\n.externalToolBuilders/\n*.launch\n\n## NetBeans\n\n/nbproject/private/\n/android/nbproject/private/\n/core/nbproject/private/\n/desktop/nbproject/private/\n/html/nbproject/private/\n/ios/nbproject/private/\n/ios-moe/nbproject/private/\n\n/build/\n/android/build/\n/core/build/\n/desktop/build/\n/html/build/\n/ios/build/\n/ios-moe/build/\n\n/nbbuild/\n/android/nbbuild/\n/core/nbbuild/\n/desktop/nbbuild/\n/html/nbbuild/\n/ios/nbbuild/\n/ios-moe/nbbuild/\n\n/dist/\n/android/dist/\n/core/dist/\n/desktop/dist/\n/html/dist/\n/ios/dist/\n/ios-moe/dist/\n\n/nbdist/\n/android/nbdist/\n/core/nbdist/\n/desktop/nbdist/\n/html/nbdist/\n/ios/nbdist/\n/ios-moe/nbdist/\n\nnbactions.xml\nnb-configuration.xml\n\n## Gradle\n\n/local.properties\n.gradle/\ngradle-app.setting\n/build/\n/android/build/\n/core/build/\n/desktop/build/\n/html/build/\n/ios/build/\n/ios-moe/build/\n\n## OS Specific\n.DS_Store\nThumbs.db\n\n## iOS\n/ios/xcode/*.xcodeproj/*\n!/ios/xcode/*.xcodeproj/xcshareddata\n!/ios/xcode/*.xcodeproj/project.pbxproj\n/ios/xcode/native/\n\n/ios-moe/xcode/*.xcodeproj/*\n!/ios-moe/xcode/*.xcodeproj/xcshareddata\n!/ios-moe/xcode/*.xcodeproj/project.pbxproj\n/ios-moe/xcode/native/\n\n### Maven template\n.classpath\n.project\n.settings/\ntarget/\n/target/**\n*/target/**\n\npom.xml.tag\npom.xml.releaseBackup\npom.xml.versionsBackup\npom.xml.next\nrelease.properties\ndependency-reduced-pom.xml\nbuildNumber.properties\n.mvn/timing.properties\n### Linux template\n*~\n\n### JetBrains template\n# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm\n# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839\n.idea\n*.iml\n# User-specific stuff:\n.idea/workspace.xml\n.idea/tasks.xml\n.idea/dictionaries\n.idea/vcs.xml\n.idea/jsLibraryMappings.xml\n\n# Sensitive or high-churn files:\n.idea/dataSources.ids\n.idea/dataSources.xml\n.idea/dataSources.local.xml\n.idea/sqlDataSources.xml\n.idea/dynamic.xml\n.idea/uiDesigner.xml\n\n## Plugin-specific files:\n\n*.sav\n\n# IntelliJ\n/out/"
+        }
+    ]
+}

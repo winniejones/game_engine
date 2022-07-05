@@ -1,0 +1,22 @@
+{
+    "sourceFile": ".devcontainer/devcontainer.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1656806516729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1656806549409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,15 +11,12 @@\n \t\t\"java.jdt.ls.java.home\": \"/docker-java-home\"\n \t},\n \t\"extensions\": [\n \t\t\"vscjava.vscode-java-pack\",\n-\t\t\"scala-lang.scala\",\n-\t\t\"scalameta.metals\",\n \t\t\"ms-vsliveshare.vsliveshare-pack\",\n \t\t\"eamodio.gitlens\"\n \t],\n \t\"remoteUser\": \"vscode\",\n \t\"features\": {\n \t\t\"git\": \"os-provided\"\n \t},\n-\t\"postCreateCommand\": \"bash ./.devcontainer/couchdb_setup\"\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1656806516729,
+            "name": "Commit-0",
+            "content": "// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:\n// https://github.com/microsoft/vscode-dev-containers/tree/v0.205.2/containers/java\n{\n\t\"name\": \"Java\",\n\t\"dockerComposeFile\": \"docker-compose.yml\",\n\t\"service\": \"app\",\n\t\"workspaceFolder\": \"/workspaces/game_engine\",\n\t\n\n\t\"settings\": {\n\t\t\"java.jdt.ls.java.home\": \"/docker-java-home\"\n\t},\n\t\"extensions\": [\n\t\t\"vscjava.vscode-java-pack\",\n\t\t\"scala-lang.scala\",\n\t\t\"scalameta.metals\",\n\t\t\"ms-vsliveshare.vsliveshare-pack\",\n\t\t\"eamodio.gitlens\"\n\t],\n\t\"remoteUser\": \"vscode\",\n\t\"features\": {\n\t\t\"git\": \"os-provided\"\n\t},\n\t\"postCreateCommand\": \"bash ./.devcontainer/couchdb_setup\"\n}"
+        }
+    ]
+}
