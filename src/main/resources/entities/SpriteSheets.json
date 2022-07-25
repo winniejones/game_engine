@@ -1,0 +1,18 @@
+[
+    {
+        "name": "tiles",
+        "path": "/sheets/spritesheet1.png",
+        "size": 256
+    },
+    {
+        "name": "projectile_wizard",
+        "path": "/sheets/projectiles/wizard.png",
+        "size": 48
+    },
+    {
+        "name": "player",
+        "path": "/sheets/new_player.png",
+        "width": 96,
+        "height": 128
+    }
+]

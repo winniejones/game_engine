@@ -15,6 +15,7 @@
 		"ms-vsliveshare.vsliveshare-pack",
 		"k--kato.intellij-idea-keybindings",
 		"GabrielBB.vscode-lombok",
+		"esbenp.prettier-vscode",
 		"eamodio.gitlens"
 	],
 	"remoteUser": "vscode",
